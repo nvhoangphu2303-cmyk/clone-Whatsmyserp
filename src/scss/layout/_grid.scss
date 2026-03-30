@@ -1,0 +1,12 @@
+@use "sass:math";
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+
+  &.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+}
+

@@ -1,0 +1,351 @@
+.grid {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+.grid.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#_next .page .header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: #fff;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+#_next .page .header .header_navbar {
+  padding: 0 24px;
+  font-size: 16px;
+  height: 90px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: #1e1adc;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.header__navbar-title:active {
+  transform: scale(0.98);
+}
+
+.header__navbar-title:hover {
+  opacity: 0.85;
+}
+
+.header__navbar-title {
+  transition: opacity 0.2s ease;
+}
+
+.header__navbar-list {
+  display: flex;
+  margin-right: 80px;
+}
+
+.header__navbar-list-item {
+  position: relative;
+  color: #042040;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 12px;
+  transition: all 0.2s ease;
+}
+
+.down_button {
+  height: 12px;
+  width: auto;
+  margin-left: 8px;
+}
+
+.button_list {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+.button_list .button_list-sign {
+  padding: 7px 24px;
+  background-color: transparent;
+  color: #042040;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+}
+.button_list .button_list-SignUp {
+  color: #fff;
+  background-color: #1e1adc;
+  border-color: #1e1adc;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#_next, .page, html, body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+}
+
+body, html, table {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body, table {
+  color: #042040;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+nav {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero, .hero__content {
+  position: relative;
+  background-color: #fff;
+  margin: 100px;
+}
+.hero .hero__content, .hero__content .hero__content {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.hero .hero__content .hero__title, .hero__content .hero__content .hero__title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 800px;
+}
+.hero .hero__content .hero__title h1, .hero__content .hero__content .hero__title h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.15em;
+  margin-bottom: 24px;
+  max-width: 650px;
+  letter-spacing: -0.02em;
+}
+.hero .hero__content .hero__title p, .hero__content .hero__content .hero__title p {
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-bottom: 36px;
+  max-width: 650px;
+  color: #444;
+  font-weight: 400;
+}
+.hero .hero__content .hero__title .hero__title--Powerful, .hero__content .hero__content .hero__title .hero__title--Powerful {
+  position: relative;
+  color: #1e1adc;
+  display: inline-block;
+}
+.hero .hero__content .hero__title .hero__title--Explore, .hero__content .hero__content .hero__title .hero__title--Explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.hero .hero__content .hero__title .hero__title--Explore .hero__title--Explore--backgound, .hero__content .hero__content .hero__title .hero__title--Explore .hero__title--Explore--backgound {
+  font-weight: 600;
+  min-width: 220px;
+  padding: 16px 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(30, 26, 220, 0.25);
+  background: linear-gradient(45deg, #1e1adc, #4340e5);
+  transform-origin: center;
+  color: #fff;
+  border-color: #1e1adc;
+}
+.hero .hero__content .hero__title .hero__title--avatar, .hero__content .hero__content .hero__title .hero__title--avatar {
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.hero .hero__content .hero__title .hero__title--avatar span, .hero__content .hero__content .hero__title .hero__title--avatar span {
+  font-weight: bold;
+}
+.hero .hero__content .hero__desc, .hero__content .hero__content .hero__desc {
+  position: relative;
+  margin: 0 auto 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+.hero .hero__content .hero__desc .hero__desc--img, .hero__content .hero__content .hero__desc .hero__desc--img {
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+}
+.hero .hero__content .hero__desc .hero__desc--img .hero__desc--img--frame, .hero__content .hero__content .hero__desc .hero__desc--img .hero__desc--img--frame {
+  position: relative;
+  width: 100%;
+}
+.hero .hero__content .hero__desc .hero__desc--img .hero__desc--img--frame img, .hero__content .hero__content .hero__desc .hero__desc--img .hero__desc--img--frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.testimonial {
+  position: relative;
+  background: #fff;
+}
+.testimonial .testimonial__heading {
+  max-width: 1232px;
+  padding: 0 16px;
+  margin: 0 auto 60px;
+}
+.testimonial .testimonial__heading .testimonial__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username {
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  padding: 20px 15px;
+  position: relative;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username .testimonial__username-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username .testimonial__username-item .testimonial__username-Zack {
+  font-weight: 500;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username .testimonial__username-item .testimonial__username-zacknote {
+  color: #44403d;
+  margin-top: -5px;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username .testimonial__username-content {
+  color: #44403d;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.testimonial .testimonial__heading .testimonial__item .testimonial__item--avatar .testimonial__username .testimonial__username-icon {
+  top: 20px;
+  right: 15px;
+  position: absolute;
+}
+.testimonial .testimonial__heading > h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+.testimonial .testimonial__heading > p {
+  text-align: center;
+  margin: 0 0 35px;
+  font-size: 20px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+.features .features__container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.features .features__container .feaures__backgound {
+  background: #f2f1f7;
+  padding: 70px;
+}
+.features .features__container .feaures__backgound .features__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.features .features__container .feaures__backgound .features__item h2 {
+  font-weight: 700;
+  font-size: 36;
+  line-height: 1.1em;
+  color: #000;
+  margin-bottom: 20px;
+}
+.features .features__container .feaures__backgound .features__item p {
+  font-size: 20px;
+  line-height: 1.3em;
+}
+.features .features__container .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.features .features__container .features__list .features__list--img {
+  text-align: center;
+  max-width: 500px;
+}
+.features .features__container .features__list .features__list--img img {
+  margin-bottom: 25px;
+  border-style: none;
+}
+.features .features__container .features__list .features__list--img h3 {
+  font-size: 26px;
+  line-height: 1.1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.features .features__container .features__list .features__list--img p {
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #042040;
+}

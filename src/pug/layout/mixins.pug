@@ -1,0 +1,15 @@
+mixin testimonial__username(img, name, username, content)
+    .testimonial__username
+        .testimonial__username-item
+            img(src=img, alt=name, width="40", height="40")
+            div
+                p.testimonial__username-name= name
+                p.testimonial__username-username= username
+        .testimonial__username-content= content
+        .testimonial__username-icon
+            img(src="../../img/twitterLogo@2x.webp", alt="Twitter Logo", width="20", height="17")
+mixin featureItem(img, title, desc)
+    .features__list--img
+        img(src=img ,width ="500" , height ="250")
+        h3= title
+        p= desc
