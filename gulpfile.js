@@ -9,7 +9,7 @@ const autoprefixer = require('gulp-autoprefixer');
 gulp.task('pug', function () {
   return gulp.src('src/pug/pages/*.pug')
     .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest('public/html'));
+    .pipe(gulp.dest('public'));
 });
 
 // Compile SCSS → CSS
@@ -19,7 +19,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer())
     // .pipe(cleanCSS())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('public/css'));
+    .pipe(gulp.dest('public'));
 });
 
 // Watch file tự động build
